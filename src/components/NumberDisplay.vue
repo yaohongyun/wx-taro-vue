@@ -1,6 +1,6 @@
 <template>
   <view>
-    <text class="title">{{ getNumbers }}</text>
+    <text class="title">{{ getNumber }}</text>
   </view>
 </template>
 
@@ -8,8 +8,8 @@
 export default {
   name: 'NumberDisplay',
   computed: {
-    getNumbers() {
-      return this.$store.getters.getNumbers;
+    getNumber() {
+      return this.$store.getters.getNumber
     }
   }
 }

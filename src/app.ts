@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import store from './store'
+import Taro from '@tarojs/taro'
 
 import './app.scss'
 import 'taro-ui-vue/dist/style/index.scss'
 
 // Vue.config.productionTip = false
+Vue.prototype.$taro = Taro
 
 const App = {
   store,

@@ -1,22 +1,45 @@
 <template>
   <view class="index">
-    <!-- <NumberDisplay/>
-    <NumberSubmit/> -->
-    <AtButton loading type='primary'>按钮文案</AtButton>
+    <NumberDisplay/>
+    <NumberSubmit/>
   </view>
 </template>
 
 <script>
-// import NumberDisplay from '../../components/NumberDisplay.vue'
-// import NumberSubmit from '../../components/NumberSubmit.vue'
-import { AtButton } from 'taro-ui-vue'
+import NumberDisplay from '../../components/NumberDisplay.vue'
+import NumberSubmit from '../../components/NumberSubmit.vue'
 
 export default {
   name: 'Index',
   components: {
-    // NumberDisplay,
-    // NumberSubmit
-    AtButton
+    NumberDisplay,
+    NumberSubmit
+  },
+  mounted(){
+    this.login()
+  },
+  onLaunch(){},
+  onShow(){},
+  onHide(){},
+  methods: {
+    login(){
+      this.$taro.login({
+        success: function (res) {
+          console.log(res, 'res===')
+          if (res.code) {
+            //发起网络请求
+            // this.$taro.request({
+            //   url: 'https://test.com/onLogin',
+            //   data: {
+            //     code: res.code
+            //   }
+            // })
+          } else {
+            console.log('登录失败！' + res.errMsg)
+          }
+        }
+      })
+    }
   }
 }
 </script>
