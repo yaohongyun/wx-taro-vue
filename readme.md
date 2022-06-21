@@ -3,23 +3,17 @@
 
 ## 文档 链接
 
-#### taro: https://taro.js.org/
+#### taro: https://taro.jd.com/
 
-#### taroUI: https://taro-ui.jd.com/#/
+#### taroUI: http://taro-ui-vue.fontend.com/#/
 
 #### 小程序api: https://developers.weixin.qq.com/miniprogram/dev/framework/
 ------------
 ## git分支管理
     线上分支: master
-
-    线上bug修复分支: hotfix
-    
-    开发分支: develop
-
-    开发功能分支: task-xxx
 ------------
 ## 运行项目(没有权限，请联系管理员)
-    1.git clone git@39.97.113.128:wx-sale
+    1.git@github.com:yaohongyun/wx-taro-vue.git
 
     2.yarn global add @tarojs/cli   OR   npm install -g @tarojs/cli   OR     cnpm install -g @tarojs/cli        
      (tip: 注意版本tarojs/cli@1.3.10 当前的所有相关taro依赖版本必须一致  
